@@ -1,18 +1,20 @@
 # react-portfolio-v2
 
-Creating a better React portfolio website than the one I had before 
+Creating a better React portfolio website than the one I had before
 
 ### Goals
 
 Create a nicer looking portfolio
 
-
 ### References
+
 I am **not** a very artistic person but the following people are. I reused a lot of their code to mix and match together my own site.
 
 <ul>
     <li>
         <a href="https://www.youtube.com/watch?v=G-Cr00UYokU">EGator Ernest Archiever</a>
+    </li>
+    <li>
         <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>
     </li>
 </ul>
