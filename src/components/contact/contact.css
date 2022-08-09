@@ -70,6 +70,10 @@ textarea {
         width: var(--container-width-sm); 
     }
 
+    .btn {
+        width: 100%;
+    }
+
     div.contact__options{
         visibility: collapse;
     }
