@@ -27,7 +27,7 @@ html {
   --color-bg-variant: #6b4f2c;
   --color-primary: #ff974d;
   --color-primary-variant: rgba(255, 151, 77, 0.4);
-  --color-white: #9c8383;
+  --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
   --transition: all 400ms ease;
@@ -62,8 +62,8 @@ h1 {
   font-size: 2.5rem;
 }
 
-section, header {
-  margin-top: 8rem;
+section,
+header {
   padding-top: 8rem;
   height: 100vh;
 }
@@ -120,20 +120,29 @@ img {
   object-fit: cover;
 }
 
-/* Hide Nav Bar */
-/* nav,
-nav * {
+/* Hide Mobile Nav Bar */
+.mobile,
+.mobile * {
   visibility: hidden;
-} */
+}
+
+/* Navigation Bar */
+@media screen and (max-width: 1280px) {
+  .mobile,
+  .mobile * {
+    visibility: visible;
+  }
+
+  .standard,
+  .standard * {
+    visibility: hidden;
+  }
+}
 
 /* Medium Devices */
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
-  }
-
-  section {
-    margin-top: 6rem;
   }
 }
 
@@ -146,9 +155,4 @@ nav * {
   section > h2 {
     margin-bottom: 2rem;
   }
-
-  /* nav,
-  nav * {
-    visibility: visible;
-  } */
 }
