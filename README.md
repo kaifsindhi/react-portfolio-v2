@@ -6,6 +6,8 @@ Creating a better React portfolio website than the one I had before
 
 Create a nicer looking portfolio
 
+Host and deploy to my <a href="https://kaifsindhi.com">website</a>
+
 ### References
 
 I am **not** a very artistic person but the following people are. I reused a lot of their code to mix and match together my own site.
@@ -18,8 +20,6 @@ I am **not** a very artistic person but the following people are. I reused a lot
         <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>
     </li>
 </ul>
-
-Host and deploy to my <a href="https://kaifsindhi.com">website</a>
 
 <!-- # Getting Started with Create React App
 
