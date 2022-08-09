@@ -75,7 +75,8 @@ textarea {
     }
 
     div.contact__options{
-        visibility: collapse;
+        height: 0;
+        visibility: hidden;
     }
 /* 
     .contact__option {
