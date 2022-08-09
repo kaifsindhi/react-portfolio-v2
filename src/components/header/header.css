@@ -9,6 +9,8 @@ header {
   position: relative;
 }
 
+/* Socials */
+
 /* CTA */
 .cta {
   margin-top: 2.5rem;
@@ -50,6 +52,10 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;
+  }
+
+  .container__socials {
+    display: flex;
   }
 
   .header__socials,

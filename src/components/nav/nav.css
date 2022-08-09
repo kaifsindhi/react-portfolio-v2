@@ -83,16 +83,16 @@ nav {
 
 /* Hide Mobile Nav Bar */
 .mobile {
-  visibility: hidden;
+  display: none;
 }
 
 /* Visibility */
 @media screen and (max-width: 1280px) {
   .mobile {
-    visibility: visible;
+    display: flex;
   }
 
   .standard {
-    visibility: hidden;
+    display: none;
   }
 }
