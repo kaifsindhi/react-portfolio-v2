@@ -64,6 +64,7 @@ h1 {
 
 section, header {
   margin-top: 8rem;
+  padding-top: 8rem;
   height: 100vh;
 }
 
