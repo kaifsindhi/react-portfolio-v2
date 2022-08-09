@@ -14,10 +14,10 @@ I am **not** a very artistic person but the following people are. I reused a lot
 
 <ul>
     <li>
-        <a href="https://www.youtube.com/watch?v=G-Cr00UYokU">EGator Ernest Archiever</a>
+        <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>
     </li>
     <li>
-        <a href="https://github.com/bchiang7/v4">Brittany Chiang</a>
+        <a href="https://www.youtube.com/watch?v=G-Cr00UYokU">EGator Ernest Archiever</a>
     </li>
 </ul>
 
