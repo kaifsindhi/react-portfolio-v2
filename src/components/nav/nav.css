@@ -19,12 +19,25 @@ nav {
 /* Standard */
 .standard {
   background: transparent;
-  border-radius: 1rem;
   flex-direction: row;
   right: 0;
   top: 2rem;
   transform: translateX(-5vw);
   gap: 0;
+}
+
+.standard a {
+  padding: 0.5rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 0;
+  width: 100px;
+  justify-content: center;
+  border-radius: 0 0 0 0;
+}
+
+.standard #page {
+  border-left: 0;
+  border-right: 0;
 }
 
 .standard #first {
@@ -33,17 +46,6 @@ nav {
 
 .standard #last {
   border-radius: 0 1.5rem 1.5rem 0;
-}
-
-.standard a {
-  padding: 0.5rem;
-  border: 1px solid var(--color-primary);
-  border-radius: 0;
-  border-left: 0;
-  border-right: 0;
-  width: 100px;
-  justify-content: center;
-  border-radius: 0 0 0 0;
 }
 
 .standard a:hover {
@@ -59,7 +61,6 @@ nav {
   border-radius: 0 0 0 0;
 }
 
-
 /* Small Devices */
 .mobile {
   padding: 0.7rem 1.7rem;
@@ -72,30 +73,26 @@ nav {
 }
 
 .mobile a:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--color-bg-variant);
 }
 
 .mobile a.active {
-  background: var(--color-bg);
-  color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-bg);
 }
 
 /* Hide Mobile Nav Bar */
-.mobile,
-.mobile * {
+.mobile {
   visibility: hidden;
 }
+
 /* Visibility */
 @media screen and (max-width: 1280px) {
-  .mobile,
-  .mobile * {
+  .mobile {
     visibility: visible;
   }
 
-  .standard,
-  .standard *,
-  #first,
-  #last {
+  .standard {
     visibility: hidden;
   }
 }

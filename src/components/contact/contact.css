@@ -70,7 +70,11 @@ textarea {
         width: var(--container-width-sm); 
     }
 
+    div.contact__options{
+        visibility: collapse;
+    }
+/* 
     .contact__option {
         padding: 0.6rem;
-    }
+    } */
 } 
