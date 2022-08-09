@@ -120,25 +120,6 @@ img {
   object-fit: cover;
 }
 
-/* Hide Mobile Nav Bar */
-.mobile,
-.mobile * {
-  visibility: hidden;
-}
-
-/* Navigation Bar */
-@media screen and (max-width: 1280px) {
-  .mobile,
-  .mobile * {
-    visibility: visible;
-  }
-
-  .standard,
-  .standard * {
-    visibility: hidden;
-  }
-}
-
 /* Medium Devices */
 @media screen and (max-width: 1024px) {
   .container {

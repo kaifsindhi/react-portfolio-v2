@@ -9,13 +9,22 @@ const Nav = () => {
     <>
       <nav className="standard">
         <a
+          id="first"
           href="#"
           className={activeNav === "#" ? "active" : ""}
           onClick={() => setActiveNav("#")}
         >
           <h5>Home</h5>
         </a>
+        {/* <a
+          href="#portfolio"
+          className={activeNav === "#portfolio" ? "active" : ""}
+          onClick={() => setActiveNav("#portfolio")}
+        >
+          <h5>Page 1</h5>
+        </a> */}
         <a
+          id="last"
           href="#contact"
           className={activeNav === "#contact" ? "active" : ""}
           onClick={() => setActiveNav("#contact")}

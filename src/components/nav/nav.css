@@ -7,39 +7,95 @@ nav a {
   font-size: 1.1rem;
 }
 
-nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-nav a.active {
-  background: var(--color-bg);
-  color: var(--color-white);
-}
-
 nav {
   background: rgba(0, 0, 0, 0.3);
   display: block;
-  padding: 0.7rem 1.7rem;
   z-index: 2;
   position: fixed;
   display: flex;
-  gap: 0.8rem;
-  border-radius: 3rem;
   backdrop-filter: blur(15px);
 }
 
 /* Standard */
 .standard {
+  background: transparent;
+  border-radius: 1rem;
   flex-direction: row;
   right: 0;
   top: 2rem;
   transform: translateX(-5vw);
+  gap: 0;
 }
+
+.standard #first {
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.standard #last {
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.standard a {
+  padding: 0.5rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  width: 100px;
+  justify-content: center;
+  border-radius: 0 0 0 0;
+}
+
+.standard a:hover {
+  background: var(--color-bg-variant);
+}
+
+.standard a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 0.4rem;
+  cursor: auto;
+  border: 0px;
+  border-radius: 0 0 0 0;
+}
+
 
 /* Small Devices */
 .mobile {
+  padding: 0.7rem 1.7rem;
+  gap: 0.8rem;
+  border-radius: 3rem;
   flex-direction: row;
   left: 50%;
   bottom: 2rem;
   transform: translateX(-50%);
+}
+
+.mobile a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.mobile a.active {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+/* Hide Mobile Nav Bar */
+.mobile,
+.mobile * {
+  visibility: hidden;
+}
+/* Visibility */
+@media screen and (max-width: 1280px) {
+  .mobile,
+  .mobile * {
+    visibility: visible;
+  }
+
+  .standard,
+  .standard *,
+  #first,
+  #last {
+    visibility: hidden;
+  }
 }
