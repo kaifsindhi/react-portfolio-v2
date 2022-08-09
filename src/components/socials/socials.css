@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: fixed;
+  left: 12.5vw;
+  bottom: 3rem;
+}
+
+.socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .socials {
+    display: none;
+  }
+}

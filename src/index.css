@@ -62,7 +62,7 @@ h1 {
   font-size: 2.5rem;
 }
 
-section {
+section, header {
   margin-top: 8rem;
   height: 100vh;
 }
