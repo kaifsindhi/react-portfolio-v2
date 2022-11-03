@@ -1,4 +1,12 @@
-import { SiPython, SiReact, SiJava, SiElixir, SiGraphql } from "react-icons/si";
+import {
+  SiPython,
+  SiReact,
+  SiJava,
+  SiElixir,
+  SiGraphql,
+  SiDocker,
+  SiMongodb,
+} from "react-icons/si";
 import { DiAngularSimple } from "react-icons/di";
 
 export const SkillsData = [
@@ -22,8 +30,16 @@ export const SkillsData = [
     title: "Angular",
     icon: <DiAngularSimple className="about__icon" />,
   },
-  {
+  /*{
     title: "GraphQL",
     icon: <SiGraphql className="about__icon" />,
   },
+  {
+    title: "MongoDB",
+    icon: <SiMongodb className="about__icon" />,
+  },
+  {
+    title: "Docker",
+    icon: <SiDocker className="about__icon" />,
+  },*/
 ];
