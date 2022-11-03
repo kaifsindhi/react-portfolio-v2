@@ -24,7 +24,7 @@ const About = () => {
             </a>
             . I have on-hands experience in <a>full-stack web development</a>{" "}
             and in-class experience in <a>machine learning</a> and{" "}
-            <a>realtime systems</a>. I currently work an internship as{" "}
+            <a>realtime systems</a>. I currently work a part-time internship at{" "}
             <a className="link" href="">
               Circa
             </a>{" "}
