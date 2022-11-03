@@ -54,18 +54,28 @@
 }
 
 .about__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  /* grid-template-columns: repeat(5, 0fr); */
+  justify-content: center;
+  gap: 1rem;
 }
 
 .about__card {
-  background: var(--color-bg-variant);
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-bg-variant),
+    transparent
+  );
   border: 1px solid transparent;
-  border-radius: 1rem;
-  padding: 2rem;
-  text-align: Center;
+  border-radius: 100%;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3px;
 }
 
 .about__card:hover {
@@ -77,7 +87,8 @@
 .about__icon {
   color: var(--color-primary);
   font-size: 1.4rem;
-  margin-bottom: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .about__card h5 {

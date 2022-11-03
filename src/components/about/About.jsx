@@ -4,6 +4,7 @@ import ME from "../../assets/me-about.png";
 import { FaAward } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import { SkillsData } from "./SkillsData";
 
 const About = () => {
   return (
@@ -29,7 +30,15 @@ const About = () => {
             <a>realtime systems</a>.
           </p>
           <div className="about__cards">
-            <article className="about__card">
+            {SkillsData.map(({ title, icon }) => {
+              return (
+                <div className="about__card">
+                  {icon}
+                  {/* <small>{title}</small> */}
+                </div>
+              );
+            })}
+            {/* <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
               <small>3+ Years Working</small>
@@ -43,7 +52,7 @@ const About = () => {
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
               <small>80+ Completed</small>
-            </article>
+            </article> */}
           </div>
           {/* <a href="#contact" className="btn btn-primary">Let's Talk</a> */}
         </div>
