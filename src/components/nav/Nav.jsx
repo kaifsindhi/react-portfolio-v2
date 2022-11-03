@@ -16,14 +16,22 @@ const Nav = () => {
         >
           <h5>Home</h5>
         </a>
-        {/* <a
+        <a
+          id="page"
+          href="#about"
+          className={activeNav === "#about" ? "active" : ""}
+          onClick={() => setActiveNav("#about")}
+        >
+          <h5>About Me</h5>
+        </a>
+        <a
           id="page"
           href="#portfolio"
           className={activeNav === "#portfolio" ? "active" : ""}
           onClick={() => setActiveNav("#portfolio")}
         >
-          <h5>Page 1</h5>
-        </a> */}
+          <h5>Projects</h5>
+        </a>
         <a
           id="last"
           href="#contact"
