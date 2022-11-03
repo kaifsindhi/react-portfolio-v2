@@ -1,10 +1,7 @@
 import React from "react";
 import "./about.css";
 import ME from "../../assets/me-about.png";
-import { FaAward } from "react-icons/fa";
-import { FiUser } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
-import { SkillsData } from "./SkillsData";
+import { SocialsData } from "./SocialsData";
 
 const About = () => {
   return (
@@ -27,34 +24,25 @@ const About = () => {
             </a>
             . I have on-hands experience in <a>full-stack web development</a>{" "}
             and in-class experience in <a>machine learning</a> and{" "}
-            <a>realtime systems</a>.
+            <a>realtime systems</a>. I currently work an internship as{" "}
+            <a className="link" href="">
+              Circa
+            </a>{" "}
+            and am looking for entry-level full-time software engineering
+            positions for when I graduate in May 2023.
           </p>
           <div className="about__cards">
-            {SkillsData.map(({ title, icon }) => {
+            {SocialsData.map(({ title, link, icon }) => {
               return (
-                <div className="about__card">
-                  {icon}
-                  <small>{title}</small>
-                </div>
+                <a href={link}>
+                  <div className="about__card">
+                    {icon}
+                    <small>{title}</small>
+                  </div>
+                </a>
               );
             })}
-            {/* <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
-            </article>
-            <article className="about__card">
-              <FiUser className="about__icon" />
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
-            </article>
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
-            </article> */}
           </div>
-          {/* <a href="#contact" className="btn btn-primary">Let's Talk</a> */}
         </div>
       </div>
     </section>

@@ -49,7 +49,7 @@ const Footer = () => {
 
       <a href="https://github.com/kaifsindhi/react-portfolio-v2">
         <div className="footer__copyright">
-          <small>Inspired by Brittany Chiang and Ernest Achiever</small>
+          <small>Credits to Brittany Chiang and Ernest Achiever</small>
         </div>
       </a>
     </footer>

@@ -1,6 +1,6 @@
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    place-content: center;
     gap: 2.5rem;
 }
 

@@ -84,6 +84,19 @@
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
+  cursor: pointer;
+}
+
+.about__card:hover .about__icon {
+  display: none;
+}
+
+.about__card:hover .about__icon.hover {
+  display: flex;
+}
+
+.about__card:hover small {
+  color: var(--color-white);
 }
 
 .about__icon {
@@ -91,6 +104,10 @@
   font-size: 1.4rem;
   width: 2rem;
   height: 2rem;
+}
+
+.about__icon.hover {
+  display: none;
 }
 
 .about__card h5 {
@@ -113,10 +130,11 @@
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
+    width: 50%;
   }
-  
+
   .about__cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 0fr);
     gap: 1rem;
   }
 
@@ -132,8 +150,12 @@
 
 /* Small Screens */
 @media screen and (max-width: 600px) {
+  .about__container {
+    width: 80%;
+  }
+
   .about__me {
-    width: 65%;
+    width: 50%;
     margin: 0 auto 3rem;
   }
 
