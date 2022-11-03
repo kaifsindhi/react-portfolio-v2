@@ -34,7 +34,7 @@ const About = () => {
               return (
                 <div className="about__card">
                   {icon}
-                  {/* <small>{title}</small> */}
+                  <small>{title}</small>
                 </div>
               );
             })}
