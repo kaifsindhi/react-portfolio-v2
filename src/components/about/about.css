@@ -1,8 +1,18 @@
 .about__container {
-  display: grid;
+  display: flex;
   width: 35%;
   /* grid-template-columns: 35% 50%; */
   gap: 15%;
+}
+
+.about_center {
+  display: flex;
+  justify-content: center;
+}
+
+.about__content a {
+  cursor: default;
+  color: var(--color-white);
 }
 
 .about__content a {
@@ -24,7 +34,7 @@
 }
 
 .about__me {
-  width: 25%;
+  width: 30%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
@@ -40,12 +50,7 @@
 .about__me-image {
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(10deg);
-  transition: var(--transition);
-}
-
-.about__me-image:hover {
-  transform: rotate(0deg);
+  width: 100%;
 }
 
 .about__cards {
@@ -118,8 +123,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-
-  
 
   .about__content p {
     margin: 1.5rem 0;
