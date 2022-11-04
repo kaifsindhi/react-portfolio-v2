@@ -22,7 +22,7 @@ const Nav = () => {
           className={activeNav === "#about" ? "active" : ""}
           onClick={() => setActiveNav("#about")}
         >
-          <h5>About Me</h5>
+          <h5>About</h5>
         </a>
         <a
           id="page"
