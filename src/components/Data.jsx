@@ -6,7 +6,7 @@ import {
 } from "react-icons/ai";
 import { VscGithub } from "react-icons/vsc";
 
-export const SocialsData = [
+export const Data = [
   {
     title: "LinkedIn",
     link: "https://www.linkedin.com/in/kaifsindhi/",

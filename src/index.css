@@ -24,7 +24,7 @@
 /* Track */
 ::-webkit-scrollbar-track {
   /* background: #f1f1f1; */
-  background: var(--color-bg)
+  background: var(--color-bg);
 }
 
 /* Handle */
@@ -106,7 +106,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-primary-variant);
+  color: var(--color-white);
 }
 
 .btn {
@@ -128,6 +128,19 @@ a:hover {
 
 .btn-primary {
   background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  color: var(--color-bg-variant);
+}
+
+.btn-secondary {
+  color: var(--color-bg-variant);
+}
+
+.btn-secondary:hover {
+  background: var(--color-bg-variant);
   color: var(--color-bg);
 }
 

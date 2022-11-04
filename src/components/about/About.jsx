@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import ME from "../../assets/me-about.png";
-import { SocialsData } from "../SocialsData";
+import { Data } from "../Data";
 
 const About = () => {
   return (
@@ -32,7 +32,7 @@ const About = () => {
             positions for when I graduate in May 2023.
           </p>
           <div className="about__cards">
-            {SocialsData.map(({ title, link, icon }) => {
+            {Data.map(({ title, link, icon }) => {
               return (
                 <a href={link}>
                   <div className="about__card">
