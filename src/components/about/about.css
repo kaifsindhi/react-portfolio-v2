@@ -1,6 +1,6 @@
 .about__container {
   display: flex;
-  width: 35%;
+  width: 50%;
   /* grid-template-columns: 35% 50%; */
   gap: 15%;
 }
@@ -34,7 +34,7 @@
 }
 
 .about__me {
-  width: 30%;
+  width: 20%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(
