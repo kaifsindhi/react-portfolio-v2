@@ -2,16 +2,18 @@ import { React } from "react";
 import "./socials.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { SocialsData } from "../SocialsData";
 
 const Nav = () => {
   return (
     <div className="socials">
-      <a href="https://www.linkedin.com/in/kaifsindhi/" target="_blank">
-        <BsLinkedin />
-      </a>
-      <a href="https://github.com/kaifsindhi" target="_blank">
-        <FaGithub />
-      </a>
+      {SocialsData.map(({ title, link, icon }) => {
+        return (
+          <a href={link}>
+            <div className="socials__card">{icon}</div>
+          </a>
+        );
+      })}
     </div>
   );
 };

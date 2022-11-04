@@ -96,11 +96,15 @@
 }
 
 .about__card:hover small {
-  color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.about__card:hover .about__icon {
+  color: var(--color-primary);
 }
 
 .about__icon {
-  color: var(--color-primary);
+  color: var(--color-light);
   font-size: 1.4rem;
   width: 2rem;
   height: 2rem;

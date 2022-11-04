@@ -2,17 +2,58 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
+  gap: 2rem;
   position: fixed;
-  left: 2.5vw;
-  bottom: 3rem;
+  left: 3vw;
+  bottom: 3.5rem;
 }
 
-.socials::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
+.socials__card {
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  opacity: 90%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3px;
+}
+
+.socials__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+  cursor: pointer;
+}
+
+.socials__card:hover .about__icon {
+  display: none;
+}
+
+.socials__card:hover .about__icon.hover {
+  display: flex;
+}
+
+.socials__card:hover small {
+  color: var(--color-white);
+}
+
+.socials__card:hover .about__icon {
+  color: var(--color-primary);
+}
+
+.socials__card .about__icon {
+  color: var(--color-bg);
 }
 
 @media screen and (max-width: 600px) {

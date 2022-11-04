@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import ME from "../../assets/me-about.png";
-import { SocialsData } from "./SocialsData";
+import { SocialsData } from "../SocialsData";
 
 const About = () => {
   return (
