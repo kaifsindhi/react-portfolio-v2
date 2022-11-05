@@ -9,7 +9,7 @@ const Nav = () => {
     <div className="socials">
       {Data.map(({ title, link, icon }) => {
         return (
-          <a href={link}>
+          <a href={link} target="_blank">
             <div className="socials__card">{icon}</div>
           </a>
         );

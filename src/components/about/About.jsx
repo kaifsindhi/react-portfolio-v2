@@ -19,13 +19,13 @@ const About = () => {
           </div>
           <p>
             Hello<a>!</a> I am a software engineering senior at{" "}
-            <a className="link" href="https://www.msoe.edu">
+            <a className="link" href="https://www.msoe.edu" target="_blank">
               Milwaukee School of Engineering
             </a>
             . I have on-hands experience in <a>full-stack web development</a>{" "}
             and in-class experience in <a>machine learning</a> and{" "}
             <a>realtime systems</a>. I currently work a part-time internship at{" "}
-            <a className="link" href="">
+            <a className="link" href="https://circaworks.com" target="_blank">
               Circa
             </a>{" "}
             and am looking for entry-level full-time software engineering
@@ -34,7 +34,7 @@ const About = () => {
           <div className="about__cards">
             {Data.map(({ title, link, icon }) => {
               return (
-                <a href={link}>
+                <a href={link} target="_blank">
                   <div className="about__card">
                     {icon}
                     <small>{title}</small>

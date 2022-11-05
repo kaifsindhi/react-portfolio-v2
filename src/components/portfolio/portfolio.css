@@ -1,53 +1,111 @@
 .portfolio__container {
-    display: flex;
-    place-content: center;
-    gap: 2.5rem;
+  display: flex;
+  border-radius: 0.25rem;
+  height: 60vh;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-primary-variant2);
 }
 
-.portfolio__item {
-    background: var(--color-primary-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+.portfolio_options_container {
+  display: flex;
+  flex-direction: column;
 }
 
-.portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+.portfolio_description {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  overflow-y: auto;
 }
 
-.portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
+.portfolio_description b,
+p {
+  color: var(--color-light);
+  font-size: 1.2rem;
 }
 
-.portfolio__item h3 {
-    margin: 1.2 0 2rem;
+.portfolio_options_container .option {
+  width: 20rem;
+  display: flex;
+  place-content: center;
+  margin-left: 1.5rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  border: 2px solid var(--color-primary-variant2);
+  color: var(--color-primary);
 }
 
-.portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+.portfolio_options_container .option.selected {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  cursor: default;
+}
+
+.technology {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.2rem;
+}
+
+.technology_icon_holder {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.technology_icon_holder:hover {
+  background-color: var(--color-primary-variant2);
+  border-color: var(--color-primary-variant);
+}
+
+.technology_icon_holder:hover .icon {
+  display: none;
+}
+
+.technology_icon_holder .icon.hover {
+  display: none;
+  color: var(--color-light);
+}
+
+.technology_icon_holder:hover .icon.hover {
+  display: flex;
+}
+
+.technology_icon_holder .icon {
+  width: 100%;
+  height: 100%;
+  padding: 0.3rem;
+  color: var(--color-bg);
 }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============= */
 @media screen and (max-width: 1024px) {
-    .portfolio__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
 
-    .service {
-        height: auto;
-    }
+  .service {
+    height: auto;
+  }
+
+  .hideMobile {
+    display: none;
+  }
 }
-  
+
 /* ============= MEDIA QUERIES (SMALL DEVICES) ============= */
 @media screen and (max-width: 600px) {
-    .portfolio__container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }

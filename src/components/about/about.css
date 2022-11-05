@@ -24,15 +24,6 @@
   color: var(--color-primary-bg);
 }
 
-.about__content .link {
-  cursor: pointer;
-  color: var(--color-primary);
-}
-
-.about__content .link:hover {
-  color: var(--color-primary-variant);
-}
-
 .about__me {
   width: 20%;
   aspect-ratio: 1/1;
@@ -155,12 +146,12 @@
 /* Small Screens */
 @media screen and (max-width: 600px) {
   .about__container {
-    width: 80%;
+    width: 90%;
   }
 
   .about__me {
-    width: 50%;
-    margin: 0 auto 3rem;
+    width: 45%;
+    margin: 0 auto 1rem;
   }
 
   .about__content p {

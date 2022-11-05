@@ -3,8 +3,9 @@
 :root {
   --color-bg: #202020;
   --color-bg-variant: #7b5e92;
-  --color-primary: #945ac1;
+  --color-primary: #ae69e4;
   --color-primary-variant: rgba(148, 90, 193, 0.4);
+  --color-primary-variant2: rgba(148, 90, 193, 0.2);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -75,7 +76,8 @@ h5 {
 }
 
 h1 {
-  font-size: 3.25rem;
+  font-size: 4rem;
+  color: var(--color-primary);
 }
 
 h2 {
@@ -110,6 +112,7 @@ section > h2 {
 
 .text-light {
   color: var(--color-light);
+  font-size: 1.2rem;
 }
 
 a {
@@ -130,7 +133,7 @@ a:hover {
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
@@ -157,6 +160,15 @@ a:hover {
   color: var(--color-bg);
 }
 
+.link {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.link:hover {
+  color: var(--color-primary-variant);
+}
+
 img {
   display: block;
   width: 100%;
@@ -178,6 +190,30 @@ img {
   }
 
   ::-webkit-scrollbar {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .about__card small {
     display: none;
   }
 }

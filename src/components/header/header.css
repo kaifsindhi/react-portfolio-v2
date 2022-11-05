@@ -7,6 +7,7 @@ header {
 .header__container {
   text-align: center;
   position: relative;
+  top: 20%;
 }
 
 /* Socials */
