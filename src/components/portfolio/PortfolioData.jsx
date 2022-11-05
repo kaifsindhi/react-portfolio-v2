@@ -240,8 +240,38 @@ const PortfolioData = [
           </>
         ),
       },
-      { title: "Process" },
-      { title: "Analysis" },
+      {
+        title: "Analysis",
+        content: (
+          <>
+            <b>WHAT WENT WELL?</b>
+            <p>
+              My team operated in three week sprints and did well at pacing
+              ourselves - with features added incrementally but consistently. We
+              also worked closely with our product owners to ensure that our
+              development matched their expectations.
+            </p>
+            <br />
+            <b>WHAT WENT WRONG?</b>
+            <p>
+              We had a loss of a team member at the end of sprint 6 and the
+              gaining of a new team member at the start of week 7. This changing
+              of hands caused us to lose some time getting the new member up to
+              speed. In turn, we had to reduce our work capacity in following
+              sprints in order to accommodate.
+            </p>
+            <br />
+            <b>LESSONS LEARNED</b>
+            <p>
+              Working in an open-source project requires lots of back and forth
+              with the developers of the open-source project. I also learned
+              that spending time learning documentation of programming languages
+              you are not familiar with is extremely beneficial even if it may
+              slow you down initially.
+            </p>
+          </>
+        ),
+      },
     ],
   },
 ];
