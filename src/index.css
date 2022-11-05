@@ -153,6 +153,7 @@ a:hover {
 
 .btn-secondary {
   color: var(--color-bg-variant);
+  background: var(--color-bg);
 }
 
 .btn-secondary:hover {
