@@ -9,7 +9,7 @@ import {
   SiDocker,
   SiPython,
 } from "react-icons/si";
-import { DiMongodb, DiSqllite } from "react-icons/di";
+import { DiMongodb, DiSqllite, DiDjango } from "react-icons/di";
 import { TbCSharp } from "react-icons/tb";
 import { FaPhoenixFramework } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
@@ -48,6 +48,7 @@ const PortfolioData = [
             target="__blank"
             className="technology_icon_holder"
           >
+            {/* <div className="tooltip">Material UI</div> */}
             <SiMaterialui className="icon" />
             <SiMaterialui className="icon hover" />
           </a>
@@ -117,6 +118,14 @@ const PortfolioData = [
           >
             <SiPython className="icon" />
             <SiPython className="icon hover" />
+          </a>
+          <a
+            // href=""
+            target="__blank"
+            className="technology_icon_holder"
+          >
+            <DiDjango className="icon" />
+            <DiDjango className="icon hover" />
           </a>
           <a
             // href=""
