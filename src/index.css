@@ -160,15 +160,6 @@ a:hover {
   color: var(--color-bg);
 }
 
-.link {
-  cursor: pointer;
-  color: var(--color-primary);
-}
-
-.link:hover {
-  color: var(--color-primary-variant);
-}
-
 img {
   display: block;
   width: 100%;

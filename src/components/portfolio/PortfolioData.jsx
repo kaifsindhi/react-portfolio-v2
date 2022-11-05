@@ -150,7 +150,7 @@ const PortfolioData = [
     ),
     summary: (
       <>
-        <b>SUMMARY</b>
+        <b>WHAT IS UPCYCLE?</b>
         <p>
           Upcycle is a social network in which schools in the Milwaukee area can
           offer, request, and transfer resources they may have. It was a
@@ -277,11 +277,12 @@ export const Selection = () => {
       <div className="container portfolio_description">
         <div>
           {selection.dates}
-          {selection.summary}
           <br />
+          {selection.summary}
           {selection.technologies}
           <br />
           {selection.moreInfo}
+          <br />
         </div>
       </div>
     </>

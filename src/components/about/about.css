@@ -120,6 +120,15 @@
   color: var(--color-light);
 }
 
+.about__content .link {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.about__content .link:hover {
+  color: var(--color-primary-variant);
+}
+
 /* Medium Screens */
 @media screen and (max-width: 1024px) {
   .about__container {
