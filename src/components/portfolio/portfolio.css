@@ -1,7 +1,7 @@
 .portfolio__container {
   display: flex;
   border-radius: 0.25rem;
-  height: 60vh;
+  height: 62vh;
   background-color: var(--color-bg);
   border: 1px solid var(--color-primary-variant2);
 }

@@ -7,14 +7,23 @@ import {
   SiElixir,
   SiGraphql,
   SiDocker,
+  SiPython,
 } from "react-icons/si";
-import { DiMongodb } from "react-icons/di";
+import { DiMongodb, DiSqllite } from "react-icons/di";
 import { TbCSharp } from "react-icons/tb";
 import { FaPhoenixFramework } from "react-icons/fa";
+import { RiReactjsFill } from "react-icons/ri";
 
 const PortfolioData = [
   {
     title: "Insight",
+    dates: (
+      <>
+        <p>
+          <i>Sept 2022 - Present</i>
+        </p>
+      </>
+    ),
     summary: (
       <>
         <b>SUMMARY</b>
@@ -35,7 +44,7 @@ const PortfolioData = [
         <b>TECH STACK</b>
         <div className="technology">
           <a
-            href="https://material.angular.io/"
+            // href="https://material.angular.io/"
             target="__blank"
             className="technology_icon_holder"
           >
@@ -43,7 +52,7 @@ const PortfolioData = [
             <SiMaterialui className="icon hover" />
           </a>
           <a
-            href="https://angular.io/"
+            // href="https://angular.io/"
             target="__blank"
             className="technology_icon_holder"
           >
@@ -51,7 +60,7 @@ const PortfolioData = [
             <RiAngularjsLine className="icon hover" />
           </a>
           <a
-            href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+            // href="https://learn.microsoft.com/en-us/dotnet/csharp/"
             target="__blank"
             className="technology_icon_holder"
           >
@@ -59,7 +68,7 @@ const PortfolioData = [
             <SiCsharp className="icon hover" />
           </a>
           <a
-            href="https://www.mongodb.com/"
+            // href="https://www.mongodb.com/"
             target="__blank"
             className="technology_icon_holder"
           >
@@ -71,7 +80,65 @@ const PortfolioData = [
     ),
   },
   {
+    title: "Board View",
+    dates: (
+      <>
+        <p>
+          <i>August 2022</i>
+        </p>
+      </>
+    ),
+    summary: (
+      <>
+        <b>SUMMARY</b>
+        <p>
+          Board View was an investigative full-stack personal project into
+          remaking an existing web application Trello.
+        </p>
+      </>
+    ),
+    moreInfo: <p></p>,
+    technologies: (
+      <>
+        <b>TECH STACK</b>
+        <div className="technology">
+          <a
+            // href=""
+            target="__blank"
+            className="technology_icon_holder"
+          >
+            <RiReactjsFill className="icon" />
+            <RiReactjsFill className="icon hover" />
+          </a>
+          <a
+            // href=""
+            target="__blank"
+            className="technology_icon_holder"
+          >
+            <SiPython className="icon" />
+            <SiPython className="icon hover" />
+          </a>
+          <a
+            // href=""
+            target="__blank"
+            className="technology_icon_holder"
+          >
+            <DiSqllite className="icon" />
+            <DiSqllite className="icon hover" />
+          </a>
+        </div>
+      </>
+    ),
+  },
+  {
     title: "Upcycle",
+    dates: (
+      <>
+        <p>
+          <i>Sept 2021 - May 2022</i>
+        </p>
+      </>
+    ),
     summary: (
       <>
         <b>SUMMARY</b>
@@ -146,7 +213,7 @@ const PortfolioData = [
             <FaPhoenixFramework className="icon hover" />
           </a>
           <a
-            href="https://elixir-lang.org/"
+            // href="https://elixir-lang.org/"
             target="__blank"
             className="technology_icon_holder"
           >
@@ -154,7 +221,7 @@ const PortfolioData = [
             <SiElixir className="icon hover" />
           </a>
           <a
-            href="https://graphql.org/"
+            // href="https://graphql.org/"
             target="__blank"
             className="technology_icon_holder"
           >
@@ -162,7 +229,7 @@ const PortfolioData = [
             <SiGraphql className="icon hover" />
           </a>
           <a
-            href="https://www.docker.com/"
+            // href="https://www.docker.com/"
             target="__blank"
             className="technology_icon_holder"
           >
@@ -200,6 +267,7 @@ export const Selection = () => {
       </div>
       <div className="container portfolio_description">
         <div>
+          {selection.dates}
           {selection.summary}
           <br />
           {selection.technologies}
