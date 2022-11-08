@@ -1,0 +1,68 @@
+.about_container {
+  width: 65vw;
+  display: flex;
+  border-radius: 0.25vw;
+  height: 65vh;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-primary);
+  padding: 1.85vw;
+}
+
+.about_container .about_me {
+  min-width: 10vw;
+  max-height: 10vw;
+  background-color: var(--color-primary-variant2);
+  border: 1px solid var(--color-primary-variant);
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_container .about_me .flexgrow {
+  display: flex;
+}
+
+.about_container .divider {
+  margin-left: 2.25vw;
+  margin-right: 2.25vw;
+  width: 0.1vw;
+  background-color: var(--color-primary);
+}
+
+.about_container .about_content {
+  overflow-y: scroll;
+}
+
+.about_me_content {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-light);
+  align-items: center;
+  margin-top: 2.5vh;
+}
+
+.about_me_content .about_icon {
+  width: 1vw;
+  color: var(--color-primary);
+}
+
+.about_container .about_me .about_me_content i {
+  font-size: 0.75vw;
+}
+
+.about_content .skills {
+  display: flex;
+  flex-direction: row;
+  padding: 0.25vw;
+  gap: 5vw;
+}
+
+.link {
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.link:hover {
+  color: var(--color-primary-variant);
+}

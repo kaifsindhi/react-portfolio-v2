@@ -3,7 +3,7 @@
 :root {
   --color-bg: #202020;
   --color-bg-variant: #7b5e92;
-  --color-primary: #ae69e4;
+  --color-primary: #cfa3f1;
   --color-primary-variant: rgba(148, 90, 193, 0.4);
   --color-primary-variant2: rgba(148, 90, 193, 0.2);
   --color-white: #fff;
@@ -219,4 +219,39 @@ img {
   section > h2 {
     margin-bottom: 2rem;
   }
+}
+
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+  cursor: pointer;
+}
+
+.about__card:hover .about__icon {
+  display: none;
+}
+
+.about__card:hover .about__icon.hover {
+  display: flex;
+}
+
+.about__card:hover small {
+  color: var(--color-primary);
+}
+
+.about__card:hover .about__icon {
+  color: var(--color-primary);
+}
+
+.about__icon {
+  color: var(--color-light);
+  font-size: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.about__icon.hover {
+  display: none;
 }

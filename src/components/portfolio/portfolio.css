@@ -1,9 +1,9 @@
 .portfolio__container {
   display: flex;
-  border-radius: 0.25rem;
+  border-radius: 0.25vw;
   height: 62vh;
   background-color: var(--color-bg);
-  border: 1px solid var(--color-primary-variant2);
+  border: 1px solid var(--color-primary);
 }
 
 .portfolio_options_container {
@@ -15,14 +15,14 @@
   margin-left: 1.5rem;
   margin-right: 0.5rem;
   width: 1px;
-  background-color: var(--color-primary-variant2);
+  background-color: var(--color-primary-variant);
 }
 
 .portfolio_description {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .portfolio_description .tabs_container {
