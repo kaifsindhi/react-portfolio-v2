@@ -165,3 +165,24 @@
 .detail_content b {
   color: var(--color-primary);
 }
+
+.go_back {
+  width: 12vw;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 2rem;
+  margin-left: 0.3vw;
+  margin-top: 0.3vw;
+  padding: 0.1vw;
+  font-size: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.go_back:hover:hover {
+  background-color: var(--color-bg-variant);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary-variant);
+}

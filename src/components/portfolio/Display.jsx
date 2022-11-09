@@ -14,6 +14,7 @@ import { DiMongodb, DiSqllite, DiDjango } from "react-icons/di";
 import { TbCSharp } from "react-icons/tb";
 import { FaPhoenixFramework } from "react-icons/fa";
 import { RiReactjsFill } from "react-icons/ri";
+import { BiArrowBack } from "react-icons/bi";
 
 const Projects = [
   {
@@ -264,17 +265,16 @@ const Summary = () => {
   } else {
     return (
       <div className="container portfolio_container detail_container">
+        <div className="go_back" onClick={() => setScope("summary")}>
+          <BiArrowBack />
+          {" "}View my other projects
+        </div>
         <div className="detail_title">
           <b>{project.title}</b>
         </div>
         <div className="detail_title_divider" />
         <div className="detail_subtitle">{project.dates}</div>
         <div className="detail_nav">
-          {/* <div className="detail_nav_item" onClick={() => setScope("summary")}>
-            View all projects
-          </div>
-          <div className="flexgrow"></div> */}
-
           {project.tabs.map((card, index) => {
             var position = "";
             var selected = "";
