@@ -1,8 +1,6 @@
 import React from "react";
-import "./contact.css";
-import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
+import "./contact2.css";
+import { AiOutlineMail, AiFillLinkedin } from "react-icons/ai";
 import { useRef as UseRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -36,56 +34,59 @@ const contact = () => {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>mkaifsindhi@gmail.com</h5>
-            <a href="mailto:mkaifsindhi@gmail.com" target="_blank" rel="noreferrer">
-              Send an email
-            </a>
-          </article>
-          {/* <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>example</h5>
-            <a href="https://example.com" target="_blank" rel="noreferrer">
-              Send a message
-            </a>
-          </article> */}
-          {/* <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>WhatsApp</h4>
-            <h5>123-4567-8900</h5>
+      <div className="container contact_container hideMobile">
+        <div className="contact_card left">
+          <div className="card">
+            <div className="about_icon">
+              <AiOutlineMail size={"inherit"} />
+            </div>
+            <b>Email</b>
             <a
-              href="https://wa.me/123-4567-8900"
+              href="mailto:mkaifsindhi@gmail.com"
               target="_blank"
               rel="noreferrer"
+              className="link"
             >
-              Send a message
+              <i>mkaifsindhi@gmail.com</i>
             </a>
-          </article> */}
+          </div>
+          <div className="card">
+            <div className="about_icon">
+              <AiFillLinkedin size={"inherit"} />
+            </div>
+            <b>LinkedIn</b>
+            <a
+              target="_blank"
+              className="link"
+              href="https://www.linkedin.com/in/kaifsindhi"
+            >
+              <i>www.linkedin.com/in/kaifsindhi</i>
+            </a>
+          </div>
         </div>
-        {/* END OF CONTACT OPTIONS */}
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-          />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
-        </form>
+        <div className="horizontal_divider" />
+        <div className="contact_card right">
+          <b>Send me a message</b>
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="name" placeholder="Your Name" required />{" "}
+            <input
+              type="email"
+              name="email"
+              placeholder="What is your email?"
+              required
+            />
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="What do you want to message me?"
+              required
+            ></textarea>
+            <br />
+            <button type="submit" className="btn btn-secondary alt">
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );

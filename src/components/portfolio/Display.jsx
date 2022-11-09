@@ -46,10 +46,9 @@ const Projects = [
 
     tabs: [
       {
-        title: "Summary",
+        title: "PAGE 1",
       },
-      { title: "Process" },
-      { title: "Analysis" },
+      { title: "PAGE 2" },
     ],
   },
   {
