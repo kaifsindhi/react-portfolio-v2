@@ -255,3 +255,9 @@ img {
 .about__icon.hover {
   display: none;
 }
+
+
+
+* {
+  transition: 0.1s;
+}

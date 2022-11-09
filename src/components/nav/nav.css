@@ -52,6 +52,7 @@ nav {
 
 .standard a:hover {
   background: var(--color-bg-variant);
+  color: var(--color-primary);
 }
 
 .standard a.active {

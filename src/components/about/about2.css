@@ -11,16 +11,17 @@
 .about_container .about_me {
   min-width: 10vw;
   max-height: 10vw;
-  background-color: var(--color-primary-variant2);
   border: 1px solid var(--color-primary-variant);
   border-radius: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-}
-
-.about_container .about_me .flexgrow {
-  display: flex;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant2),
+    transparent
+  );
 }
 
 .about_container .divider {
@@ -31,7 +32,7 @@
 }
 
 .about_container .about_content {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .about_me_content {
@@ -49,6 +50,10 @@
 
 .about_container .about_me .about_me_content i {
   font-size: 0.75vw;
+}
+
+.about_container .about_content p {
+  color: var(--color-light);
 }
 
 .about_content .skills {

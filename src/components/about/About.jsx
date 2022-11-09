@@ -46,7 +46,7 @@ const About = () => {
               className="link"
               href="https://github.com/kaifsindhi"
             >
-              <i>https://github.com/kaifsindhi</i>
+              <i>www.github.com/kaifsindhi</i>
             </a>
           </div>
         </div>
@@ -99,8 +99,6 @@ const About = () => {
             <a href={Resume} download className="btn btn-secondary">
               Download Resume
             </a>
-            <br />
-            <br />
           </p>
         </div>
       </div>
