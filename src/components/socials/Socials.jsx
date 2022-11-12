@@ -1,7 +1,5 @@
 import { React } from "react";
 import "./socials.css";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
 import { Data } from "../Data";
 
 const Nav = () => {

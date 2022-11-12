@@ -13,6 +13,9 @@ const About = () => {
         <div className="about_me">
           <img src={ME} alt="About Me" />
           <div className="about_me_content">
+            <a href={Resume} download className="btn btn-secondary">
+              Download Resume
+            </a>
             <div className="about_icon">
               <AiOutlineMail size={"inherit"} />
             </div>
@@ -92,13 +95,6 @@ const About = () => {
                 <li>• Docker</li>
               </ul>
             </div>
-            <br />
-            Download my resume below to see how I've used these technologies!
-            <br />
-            <br />
-            <a href={Resume} download className="btn btn-secondary">
-              Download Resume
-            </a>
           </p>
         </div>
       </div>

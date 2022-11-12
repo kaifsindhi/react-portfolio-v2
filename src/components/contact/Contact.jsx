@@ -68,7 +68,7 @@ const contact = () => {
         <div className="contact_card right">
           <b>Send me a message</b>
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="name" placeholder="Your Name" required />{" "}
+            <input type="text" name="name" placeholder="What is your name?" required />{" "}
             <input
               type="email"
               name="email"
