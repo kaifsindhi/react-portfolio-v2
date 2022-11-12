@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.3b251493.css",
-    "main.js": "/static/js/main.340a0fcb.js",
+    "main.css": "/static/css/main.34bbc00a.css",
+    "main.js": "/static/js/main.5ab38af3.js",
     "static/media/kaif_sindhi_resume.pdf": "/static/media/kaif_sindhi_resume.530d92386578d10c6e3d.pdf",
+    "static/media/6.JPG": "/static/media/6.40907820626cbf505b14.JPG",
     "static/media/me.png": "/static/media/me.dc21946d609b8b8e1bf4.png",
+    "static/media/8.JPG": "/static/media/8.fc64ec2f426098413785.JPG",
+    "static/media/cover.JPG": "/static/media/cover.6fd0c001896dc4b9b8c9.JPG",
+    "static/media/2.JPG": "/static/media/2.df92ee958269e0426b99.JPG",
+    "static/media/7.JPG": "/static/media/7.3234fd779c556d661840.JPG",
+    "static/media/3.JPG": "/static/media/3.671a70a78dc92052a821.JPG",
+    "static/media/4.JPG": "/static/media/4.dff89f7d1e696ec89442.JPG",
+    "static/media/5.JPG": "/static/media/5.00790a6b3862580463e5.JPG",
+    "static/media/1.JPG": "/static/media/1.4084e2d64fe777ccc1c7.JPG",
     "static/media/board-view.png": "/static/media/board-view.d183fc25532b0edb7246.png",
     "index.html": "/index.html",
-    "main.3b251493.css.map": "/static/css/main.3b251493.css.map",
-    "main.340a0fcb.js.map": "/static/js/main.340a0fcb.js.map"
+    "main.34bbc00a.css.map": "/static/css/main.34bbc00a.css.map",
+    "main.5ab38af3.js.map": "/static/js/main.5ab38af3.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b251493.css",
-    "static/js/main.340a0fcb.js"
+    "static/css/main.34bbc00a.css",
+    "static/js/main.5ab38af3.js"
   ]
 }
