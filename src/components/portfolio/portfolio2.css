@@ -1,6 +1,6 @@
 .portfolio_container {
   height: 65vh;
-  width: 78vw;
+  width: 55vw;
   border-radius: 0.25vw;
   background-color: var(--color-bg);
   border: 1px solid var(--color-primary);

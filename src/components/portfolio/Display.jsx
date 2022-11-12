@@ -38,15 +38,30 @@ const Summary = () => {
       interactive_demo: {
         slides: [
           {
-            image: require("../../assets/upcycle/1.JPG"),
+            image: require("../../assets/insight/1.jpg"),
             caption:
-              "After checking out the GitHub repository, the flavour must be changed to upcycle and some pre-config has to be completed via the commands above (in the red squares).",
+              "This is our current frontend for Insight. It is very bare bones since we are still in the early stages of the project. However, this is displaying the configuration page, which is also the landing page.",
+          },
+          {
+            image: require("../../assets/insight/2.jpg"),
+            caption:
+              "After navigating through a setting, subcategory, and setting, we can see the parameters we can toggle on and off. This prototype of navigation and toggling wil be more useful when we import settings.",
+          },
+          {
+            image: require("../../assets/insight/3.jpg"),
+            caption:
+              "This is running the frontend integration tests via terminal. The command is given in the red square above. Essentially, our integration test needs to test that the frontend is hitting our backend API endpoints.",
+          },
+          {
+            image: require("../../assets/insight/4.jpg"),
+            caption:
+              'For our product owners, the two most important browsers are Firefox and any Chromium-based browsers. In the output above (namely the red squares), we see that a frontend integration test called "example read & click " has been ran and passed for both Chrome and Firefox.',
           },
         ],
       },
       tabs: [
         {
-          title: "Summary",
+          title: "Description",
           content: (
             <>
               <b>What is Insight?</b>
@@ -94,14 +109,11 @@ const Summary = () => {
               <p>
                 Currently, New World support staff must manually write SQL to
                 update changes to their individual services to their clients.
-                Our team aims to solve this problem by creating a one-stop web
-                configuration web application.
               </p>
               <br />
-              <b>What is my role?</b>
               <p>
-                I am the DevOps for the team. So, I created the development
-                build and have set up the frontend integration testing so far.
+                Our team aims to solve this problem by creating a one-stop web
+                configuration web application that support staff can use.
               </p>
             </>
           ),
@@ -112,10 +124,20 @@ const Summary = () => {
             <>
               <b>My Team</b>
               <p>
-                We are a team of five software engineering seniors. We all have
-                our own different skillsets and have divided labor for the
-                project into areas we have interest in - i.e. frontend, backend,
-                etc.
+                We are a team of five software engineering seniors. I worked
+                with two of them on Upcycle last year.
+              </p>
+              <br />
+              <p>
+                We all have our own different skillsets and have divided labor
+                for the project into areas we have interest in - i.e. frontend,
+                backend, etc.
+              </p>
+              <br />
+              <b>What is my role?</b>
+              <p>
+                I am the DevOps for the team. So, I created the development
+                build and have set up the frontend integration testing so far.
               </p>
               <br />
               <b>What is the project - so far?</b>
@@ -132,26 +154,71 @@ const Summary = () => {
             </>
           ),
         },
-      ],
-    },
-    {
-      title: "Board View",
-      dates: "August 2022",
-      cover_image: Images.boardView,
-      brief_summary: (
-        <p>
-          Board View was an investigative full-stack personal project into
-          remaking the existing web application Trello.
-        </p>
-      ),
-
-      tabs: [
         {
-          title: "PAGE 1",
+          title: "Analysis",
+          content: (
+            <>
+              <b>What is going well?</b>
+              <p>
+                Our team cohesion is amazing. We fully understand the project
+                and put our best foot forward to get things accomplished.
+              </p>
+              <br />
+              <p>
+                Although our backend architecture is not yet fully implemented,
+                it is a very atypical but impressive solution.
+              </p>
+              <br />
+              <b>What is going not as well?</b>
+              <p>
+                Midterms and other obligations drastically reduced our work
+                load.
+              </p>
+              <br />
+              <p>
+                Our frontend is lacking in consistent styling and clearly does
+                not follow UX principles! We plan to fix this in future sprints.
+              </p>
+              <br />
+              <b>What lessons am I learning?</b>
+              <p>
+                Starting on tasks earlier on gives you much more time later to
+                refine functionality in other areas of the project.
+              </p>
+              <br />
+              <p>
+                Constraints from the product owners minimize alternate options
+                available to us. For example, we must Materal UI for our
+                front-end styling.
+              </p>
+              <br />
+              <p>
+                C# and Angular are unfamiliar programming languages to me and so
+                I am gaining technical knowledge on them.
+              </p>
+            </>
+          ),
         },
-        { title: "PAGE 2" },
       ],
     },
+    // {
+    //   title: "Board View",
+    //   dates: "August 2022",
+    //   cover_image: Images.boardView,
+    //   brief_summary: (
+    //     <p>
+    //       Board View was an investigative full-stack personal project into
+    //       remaking the existing web application Trello.
+    //     </p>
+    //   ),
+
+    //   tabs: [
+    //     {
+    //       title: "PAGE 1",
+    //     },
+    //     { title: "PAGE 2" },
+    //   ],
+    // },
     {
       title: "Upcycle",
       dates: "Sept 2021 - May 2022",
@@ -359,7 +426,7 @@ const Summary = () => {
                 member up to speed.
               </p>
               <br />
-              <b>Lessons learned</b>
+              <b>What lessons did I learn?</b>
               <p>
                 <p>
                   Working in an open-source project requires lots of back and
