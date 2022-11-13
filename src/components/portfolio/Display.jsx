@@ -45,7 +45,7 @@ const Summary = () => {
           {
             image: require("../../assets/insight/2.jpg"),
             caption:
-              "After navigating through a setting, subcategory, and setting, we can see the parameters we can toggle on and off. This prototype of navigation and toggling wil be more useful when we import settings.",
+              "After navigating through a setting, subcategory, and setting, we can see the parameters we can toggle on and off. This prototype of navigation and toggling will be more useful when we import settings.",
           },
           {
             image: require("../../assets/insight/3.jpg"),
